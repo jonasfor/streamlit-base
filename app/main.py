@@ -8,7 +8,7 @@ add_custom_css()
 
 @provide_state()
 def main(state=None):
-    current_page = st.sidebar.radio("Go To", list(PAGE_MAP))
+    current_page = st.sidebar.selectbox("Go To", list(PAGE_MAP))
     PAGE_MAP[current_page](state=state).write()
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@ import streamlit as st
 from ..utils import Page
 
 
-class Page2(Page):
+class Customer(Page):
     def __init__(self, state):
         self.state = state
 
